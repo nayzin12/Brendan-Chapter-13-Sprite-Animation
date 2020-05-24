@@ -35,6 +35,9 @@ def main():
 
     #Character Idle Frame
     character=sprite_sheet.subsurface((1000,0,100,100))
+
+    #background
+    background=pygame.image.load("background.png")
     
     # Game loop.
     
@@ -88,7 +91,7 @@ def main():
       # Update.
       
       # Draw.
-      screen.fill((0, 150, 0))
+      screen.blit(background,(0,0))
       
       #Walking Right  
       walk_right=sprite_sheet.subsurface((0+(walkcount%800),0,100,100))
