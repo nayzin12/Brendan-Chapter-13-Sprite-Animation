@@ -85,12 +85,10 @@ def main():
                 left=False
                 up=False
                 down=False
-        #deltax=(deltax+xspeed)
 
                     
-      # Update.
       
-      # Draw.
+      #Background blit
       screen.blit(background,(0,0))
       
       #Walking Right  
